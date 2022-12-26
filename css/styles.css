@@ -378,7 +378,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .icon-move::before {
     content: "";
-    background-color:   rgba(33, 150, 243, 0.9);;
+    background-color: rgba(33, 150, 243, 0.9);
     width: 100%;
     display: inline-block;
     top: 0;
@@ -415,6 +415,96 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     width: 322px;
 }
 
+
+.icon-description1::before {
+    content: "";
+    background-color: rgba(47, 48, 58, 0.8);;
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    position: absolute;
+}
+
+
+.icon-description2::before {
+    content: "";
+    background-color: rgba(47, 48, 58, 0.8);;
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    height: 70px;
+    position: absolute;
+}
+
+
+.icon-description3::before {
+    content: "";
+    background-color: rgba(47, 48, 58, 0.8);;
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+
+    height: 70px;
+    position: absolute;
+}
+
+.description-icon-works1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    content: "";
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    position: absolute;
+    padding: 27px 107px;
+    color: var(--primary-backgraund-color);
+}
+
+
+.description-icon-works2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    content: "";
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    height: 70px;
+    position: absolute;
+    padding: 27px 107px;
+    color: var(--primary-backgraund-color);
+}
+
+
+.description-icon-works3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    content: "";
+    width: 100%;
+    display: inline-block;
+    bottom: 0;
+    position: absolute;
+    color: var(--primary-backgraund-color);
+    padding: 27px 95px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
 /* header */
 
@@ -842,10 +932,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
-.about-us-wapper {
-
-}
-
 
 .our-team {
     font-weight: 700;
@@ -1038,6 +1124,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding-left: 0;
 
     justify-content: center;
+
+    position: relative;
 }
 
 .section-foto-works li {

@@ -120,6 +120,7 @@ body {
 
 .hover-address :hover , .hover-address :focus{
     color: var(--hover-focus-color);
+    transition-duration: 250ms;
 }
 
 .hover-address {
@@ -187,6 +188,7 @@ body {
 
 .box-description:hover, .box-description:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: 250ms;
 }
 
 
@@ -219,6 +221,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .center-button button:hover , .center-button button:focus{
     background: var(--hover-focus-color);
     color: var(--primary-backgraund-color);
+    transition-duration: 250ms;
 }
 
 
@@ -370,6 +373,49 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
+/* icon html */
+
+
+.icon-move::before {
+    content: "";
+    background-color:   rgba(33, 150, 243, 0.9);;
+    width: 100%;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.icon-move {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.cards-wripper:hover .icon-move::before {
+    transform: translateY(0);
+}
+
+
+.text-move {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    color: var(--primary-backgraund-color);
+    width: 322px;
+}
+
+
 /* header */
 
 
@@ -459,11 +505,30 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .header-button :hover , .header-button :focus{
     color: var(--hover-focus-color);
+    transition-duration: 250ms;
 }
 
 
 .header-button .link.current {
     color: var(--hover-focus-color); 
+}
+
+
+
+.current::after {
+    content: "";
+    background: #2196F3;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
+.header-current {
+    position: relative;
 }
 
 
@@ -501,6 +566,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .header-button-nomber2 :hover , .header-button-nomber2 :focus {
     color: var(--hover-focus-color);
+    transition-duration: 250ms;
 }
 
 .header-button-nomber:first-child {
@@ -511,6 +577,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .header-button-nomber a:hover , .header-button-nomber a:focus{
     color: var(--hover-focus-color);
     fill: var(--hover-focus-color);
+    transition-duration: 250ms;
 }
 
 
@@ -741,6 +808,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .business-button:hover , .business-button:focus {
     background-color: var(--button--color);
     color: var(--primary-backgraund-color);
+    transition-duration: 250ms;
 }
 
 
@@ -770,6 +838,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     letter-spacing: 0.03em;
     color: var(--description-text-color); 
     margin-bottom: 50px;
+
+}
+
+
+.about-us-wapper {
+
 }
 
 
@@ -1055,10 +1129,16 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     display: flex;
 }
 
+.icon-button:hover {
+    background-color: var(--hover-focus-color);
+    transition-duration: 250ms;
+}
+
+
 
 .icon-content2 .icon-item:hover, .icon-content2 .icon-item:focus {
-    background-color: var(--hover-focus-color);
     border-radius: 50%;
+    transition-duration: 250ms;
 }
 
 .icon-item {
@@ -1137,7 +1217,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .icon-main a:hover, .icon-main a svg:hover {
     border-color: #2196F3;
-
+    transition-duration: 250ms;
 }
 
 
@@ -1145,6 +1225,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .icon-main a svg:hover {
     fill: #2196F3;
+    transition-duration: 250ms;
 }
 
 
@@ -1233,9 +1314,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .icon-wipper:hover, .icon-wipper:focus {
     background-color: var(--hover-focus-color);
+    transition-duration: 250ms;
 }
 
-
+.icon-main:hover .icon-company1 {
+    
+}
 
 .icon-wipper:hover .icon-discraib {
     fill: currentColor;
@@ -1273,3 +1357,5 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     color: #212121; 
     margin-bottom: 50px;
 }
+
+

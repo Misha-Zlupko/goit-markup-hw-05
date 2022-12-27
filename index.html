@@ -38,7 +38,7 @@
             <section class="section-business">
                 <div class="container">
                 <h1 class="business-header">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="business-button">Замовити послугу</button>
+                <button type="button" class="business-button" data-modal-open>Замовити послугу</button>
             </div>
             </section>
         <section class="section-discraption">
@@ -326,5 +326,33 @@
         </div>
         </div>
     </footer>
+
+    <!-- Modal window -->
+
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button class="modal-btn" data-modal-close>
+                <svg class="modal-icon-close" width="11" height="11">
+                  <use href="./img/icons.svg/Vector.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script>
+        (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+    </script>
 </body>
 </html>

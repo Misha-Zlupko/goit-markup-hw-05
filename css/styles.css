@@ -12,6 +12,7 @@
     --button--color: #188CE8;
     --line--header : #ECECEC;
     --card--laine : #EEEEEE;
+    --anim-slow : 250ms;
 }
 
 /* oll */
@@ -65,6 +66,7 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -85,6 +87,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: var(--addres-number-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -92,6 +95,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: var(--addres-number-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-partfolio {
@@ -104,6 +108,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: var(--addres-number-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -116,12 +121,12 @@ body {
 
 .address-strit {
     color: var(--primary-backgraund-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .hover-address :hover , .hover-address :focus{
     color: var(--hover-focus-color);
-    transition-duration: 250ms;
 }
 
 .hover-address {
@@ -157,7 +162,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em; 
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-strit :focus{
@@ -189,7 +194,7 @@ body {
 
 .box-description:hover, .box-description:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
+
 }
 
 
@@ -222,7 +227,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .center-button button:hover , .center-button button:focus{
     background: var(--hover-focus-color);
     color: var(--primary-backgraund-color);
-    transition-duration: 250ms;
 }
 
 
@@ -247,6 +251,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border: 0px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -262,6 +267,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding: 6px 22px;
     border: 0px;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -277,6 +283,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding: 6px 22px;
     border: 0px;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttonn4 {
@@ -291,6 +298,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding: 6px 22px;
     border: 0px;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -306,6 +314,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding: 6px 22px;
     border: 0px;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -386,7 +395,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     left: 0;
     height: 100%;
     position: absolute;
-    opacity: 0.5;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -398,7 +406,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
-.cards-wripper:hover .icon-move::before {
+.box-description:hover .icon-move::before {
     transform: translateY(0);
 }
 
@@ -419,7 +427,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
-li:hover .text-move{
+.box-description:hover .text-move{
     opacity: 1;
     transform: translate(-50%, -50%);
 }
@@ -539,9 +547,6 @@ li:hover .text-move{
 
 
 
-/* .button-nomber svg use {
-    fill: var(--link-text-color);
-} */
 
 
 
@@ -605,7 +610,6 @@ li:hover .text-move{
 
 .header-button :hover , .header-button :focus{
     color: var(--hover-focus-color);
-    transition-duration: 250ms;
 }
 
 
@@ -639,6 +643,7 @@ li:hover .text-move{
     display: flex;
     align-items: center;
     color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -646,6 +651,9 @@ li:hover .text-move{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
 }
 
 
@@ -666,7 +674,6 @@ li:hover .text-move{
 
 .header-button-nomber2 :hover , .header-button-nomber2 :focus {
     color: var(--hover-focus-color);
-    transition-duration: 250ms;
 }
 
 .header-button-nomber:first-child {
@@ -677,7 +684,6 @@ li:hover .text-move{
 .header-button-nomber a:hover , .header-button-nomber a:focus{
     color: var(--hover-focus-color);
     fill: var(--hover-focus-color);
-    transition-duration: 250ms;
 }
 
 
@@ -743,8 +749,8 @@ li:hover .text-move{
 } */
 
 .button-nomber svg{
-    width: 16px;
-    height: 12px;
+    width: 10px;
+    height: 16px;
     fill: currentColor;
     margin-right: 10px
 }
@@ -878,7 +884,6 @@ li:hover .text-move{
      rgba(0,0,0,0.4) ,
      rgba(0, 0, 0, 0.4)
     ), url(../img/back\ ground\ hero\ chenge.jpg);
-    height: 600px;
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
@@ -908,7 +913,6 @@ li:hover .text-move{
 .business-button:hover , .business-button:focus {
     background-color: var(--button--color);
     color: var(--primary-backgraund-color);
-    transition-duration: 250ms;
 }
 
 
@@ -1109,6 +1113,7 @@ li:hover .text-move{
     font-size: 14px;
     line-height: 1.7;
     color: var(--addres-number-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1225,19 +1230,14 @@ li:hover .text-move{
     align-items: center;
     justify-content: space-around;
     display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-button:hover {
     background-color: var(--hover-focus-color);
-    transition-duration: 250ms;
 }
 
 
-
-.icon-content2 .icon-item:hover, .icon-content2 .icon-item:focus {
-    border-radius: 50%;
-    transition-duration: 250ms;
-}
 
 .icon-item {
     cursor: pointer;
@@ -1309,24 +1309,23 @@ li:hover .text-move{
     align-items: center;
     justify-content: space-around;
     display: flex;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
 .icon-main a:hover, .icon-main a svg:hover {
-    border-color: #2196F3;
-    transition-duration: 250ms;
+    border-color: var(--hover-focus-color);
+}
+
+.icon-wrapper-hov:hover svg {
+    fill: var(--hover-focus-color);
 }
 
 
-
-
-.icon-main a svg:hover {
-    fill: #2196F3;
-    transition-duration: 250ms;
+.icon-wrapper-hov svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 
 /* .icon-main li svg:hover, .icon-main li svg:focus {
@@ -1407,12 +1406,12 @@ li:hover .text-move{
     justify-content: center;
     fill: #AFB1B8;
     color: white;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .icon-wipper:hover, .icon-wipper:focus {
     background-color: var(--hover-focus-color);
-    transition-duration: 250ms;
 }
 
 .icon-main:hover .icon-company1 {
@@ -1471,9 +1470,9 @@ li:hover .text-move{
     right: 0;
     bottom: 0;
     z-index: 10;
-    transform: rotate(50%, 50%);
     background-image: linear-gradient(to right , rgba(0,0,0,0.4) ,
      rgba(0, 0, 0, 0.4) );
+    transition: opacity, var(--anim-slow) cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
@@ -1482,10 +1481,12 @@ li:hover .text-move{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
     background-color: var(--primary-backgraund-color);
     border-radius: 4px;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1510,4 +1511,17 @@ li:hover .text-move{
 .is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
+
+
+.backdrop.is-hidden .modal {
+    transform: translate( -50%, -70%);
+    opacity: 0;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
